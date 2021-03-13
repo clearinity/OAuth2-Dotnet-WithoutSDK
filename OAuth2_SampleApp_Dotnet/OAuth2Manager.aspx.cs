@@ -1117,6 +1117,8 @@ namespace OAuth2_SampleApp_Dotnet
                 output("Log error path not found.");
             }
 
+
+            if (!Directory.Exists(logPath)) Directory.CreateDirectory(logPath);
             return logPath;
 
 
